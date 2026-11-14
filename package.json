@@ -1,0 +1,96 @@
+{
+  "name": "lk-kit",
+  "version": "0.1.0",
+  "description": "Zero-dependency Sri Lankan utilities: NIC parser, phone numbers, LKR formatting and number-to-words (English/Sinhala/Tamil).",
+  "keywords": [
+    "sri-lanka",
+    "sri lanka",
+    "nic",
+    "phone",
+    "lkr",
+    "rupees",
+    "number-to-words",
+    "sinhala",
+    "tamil",
+    "validation"
+  ],
+  "license": "MIT",
+  "author": "Yehen",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./nic": {
+      "import": {
+        "types": "./dist/nic.d.ts",
+        "default": "./dist/nic.js"
+      },
+      "require": {
+        "types": "./dist/nic.d.cts",
+        "default": "./dist/nic.cjs"
+      }
+    },
+    "./phone": {
+      "import": {
+        "types": "./dist/phone.d.ts",
+        "default": "./dist/phone.js"
+      },
+      "require": {
+        "types": "./dist/phone.d.cts",
+        "default": "./dist/phone.cjs"
+      }
+    },
+    "./currency": {
+      "import": {
+        "types": "./dist/currency.d.ts",
+        "default": "./dist/currency.js"
+      },
+      "require": {
+        "types": "./dist/currency.d.cts",
+        "default": "./dist/currency.cjs"
+      }
+    },
+    "./words": {
+      "import": {
+        "types": "./dist/words.d.ts",
+        "default": "./dist/words.js"
+      },
+      "require": {
+        "types": "./dist/words.d.cts",
+        "default": "./dist/words.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
