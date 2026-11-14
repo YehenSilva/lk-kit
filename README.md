@@ -1,3 +1,5 @@
+![lk-kit](https://raw.githubusercontent.com/YehenSilva/lk-kit/main/assets/banner.png)
+
 # lk-kit
 
 Zero-dependency utilities for Sri Lankan apps, written in TypeScript. Works in Node 18+, browsers and bundlers (ESM and CommonJS).

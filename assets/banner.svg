@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0C2220"/>
+      <stop offset="1" stop-color="#07100F"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.1" r="0.7">
+      <stop offset="0" stop-color="#FFBE29" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFBE29" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- Left column -->
+  <text x="80" y="132" font-family="Inter, sans-serif" font-size="16" font-weight="600" letter-spacing="4" fill="#FFBE29">NPM PACKAGE</text>
+  <text x="80" y="244" font-family="Inter, sans-serif" font-size="116" font-weight="800" letter-spacing="-3" fill="#FFFFFF">lk-kit</text>
+  <text x="80" y="304" font-family="Inter, sans-serif" font-size="30" font-weight="500" fill="#B8CFCB">Sri Lankan utilities for</text>
+  <text x="80" y="344" font-family="Inter, sans-serif" font-size="30" font-weight="500" fill="#B8CFCB">JavaScript &amp; TypeScript</text>
+
+  <!-- Chips -->
+  <g font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#FFBE29" text-anchor="middle">
+    <rect x="80" y="380" width="80" height="40" rx="20" fill="none" stroke="#FFBE29" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="120" y="406">NIC</text>
+    <rect x="172" y="380" width="100" height="40" rx="20" fill="none" stroke="#FFBE29" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="222" y="406">Phone</text>
+    <rect x="284" y="380" width="80" height="40" rx="20" fill="none" stroke="#FFBE29" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="324" y="406">LKR</text>
+    <rect x="376" y="380" width="100" height="40" rx="20" fill="none" stroke="#FFBE29" stroke-opacity="0.6" stroke-width="1.5"/>
+    <text x="426" y="406">Words</text>
+  </g>
+
+  <!-- Install command -->
+  <rect x="80" y="452" width="520" height="64" rx="12" fill="#0F2A27" stroke="#1E4A45" stroke-width="1.5"/>
+  <text x="108" y="493" font-family="'DejaVu Sans Mono', monospace" font-size="26" fill="#FFBE29">$</text>
+  <text x="140" y="493" font-family="'DejaVu Sans Mono', monospace" font-size="26" fill="#FFFFFF">npm install lk-kit</text>
+
+  <text x="80" y="562" font-family="Inter, sans-serif" font-size="16" fill="#7FA39D">Zero dependencies  ·  TypeScript  ·  MIT</text>
+
+  <!-- Code card -->
+  <rect x="680" y="100" width="520" height="440" rx="18" fill="#0F2523" stroke="#1E4A45" stroke-width="1.5"/>
+  <circle cx="710" cy="132" r="6" fill="#8D153A"/>
+  <circle cx="732" cy="132" r="6" fill="#FFBE29"/>
+  <circle cx="754" cy="132" r="6" fill="#1B8A6B"/>
+  <g font-family="'DejaVu Sans Mono', monospace" font-size="20">
+    <text x="710" y="196"><tspan fill="#FFBE29">parseNIC</tspan><tspan fill="#FFFFFF">('853400937V')</tspan></text>
+    <text x="710" y="224" fill="#6F9690">// 1985-12-05 · male</text>
+
+    <text x="710" y="280"><tspan fill="#FFBE29">parsePhone</tspan><tspan fill="#FFFFFF">('+94 77 123 4567')</tspan></text>
+    <text x="710" y="308" fill="#6F9690">// mobile · Dialog</text>
+
+    <text x="710" y="364"><tspan fill="#FFBE29">formatLKR</tspan><tspan fill="#FFFFFF">(1250000)</tspan></text>
+    <text x="710" y="392" fill="#6F9690">// 'Rs. 1,250,000.00'</text>
+
+    <text x="710" y="448"><tspan fill="#FFBE29">numberToWords</tspan><tspan fill="#FFFFFF">(105)</tspan></text>
+    <text x="710" y="476" fill="#6F9690">// one hundred and five</text>
+  </g>
+
+  <!-- Bottom stripe -->
+  <rect x="0" y="632" width="427" height="8" fill="#00534E"/>
+  <rect x="427" y="632" width="426" height="8" fill="#FFBE29"/>
+  <rect x="853" y="632" width="427" height="8" fill="#8D153A"/>
+</svg>
